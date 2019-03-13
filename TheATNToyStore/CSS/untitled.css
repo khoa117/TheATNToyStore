@@ -1,0 +1,45 @@
+/* CSS Document */
+body{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 15px;
+}
+#header-main{
+ height: auto;
+text-align: center;
+	color: blue;
+	background-color: white;
+}
+#head h1{
+	color: red
+}
+#menu{
+  background-color: white;
+  list-style-type: decimal;
+  text-align: center;
+color: black;
+}
+#menu li {
+  color:black;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;	
+}
+#menu a {
+  text-decoration: none;
+  color:black
+}
+#menu a:hover {
+  background-color: red;
+  color:black;
+}
+#TB td{
+	width: 50%;
+	height:auto;
+}
+
+#r h{
+	font-size: 5px;
+}
+

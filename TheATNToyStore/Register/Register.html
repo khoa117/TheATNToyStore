@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+</head>
+
+<body>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phones Shops</title>
+	<link rel="stylesheet" href="../../Phone Shops 2/CSS/untitled.css"/>
+<title>Layout</title>
+</head>
+
+<body>
+	<div id="header-main">
+    <div class="container">
+    <div class="panel-brand">
+    <center><div class="logo"><a href="https://www.theanttoystore.com/en" title="store">
+    <img src="https://f.btwcdn.com/store-41331/store/772e3f0d-edeb-55cf-2e37-5c3a0599f2d2.jpg" width="90" alt="The Ant Toy store" title="The Ant Toy store" class="img-logo"></a>
+    </div>
+		</center>
+    <div class="store-info text-center">
+    <div class="text-center">
+    <center><h1 class="store-name">The Ant Toy Store</h1></center>
+    <a href="https://www.theanttoystore.com/en/login"></a>
+    </div>
+    <p class="text -size13 -gray">The Ant Toy store :144 Pham Phu Thu, P.4, Q.6</p>
+    </div><!-- store-info -->            
+    </div>
+    </div>
+</div>
+	<div>
+	<div id="head"> </div>
+	<div id="menu">
+		<ul>
+		<li><a href="../Signin/TheATNToyStore.html">HOME</a></li>
+        <li><a href="../PRODUCT.html">PRODUCT</a></li>
+	    <li><a href="Register.html">REGISTER</a></li>
+	    <li><a href="../Signin/Signin.html">SIGNIN</a></li>
+		<li><a href="..">CONTACT</a></li>
+		</ul>
+		</div>
+				<td><img src="../../ac76fd61-76e1-b46d-1cb4-5c20b880a937.png" width="100%" height="100%"/></td>
+				
+			</div>
+			<center>
+				<h1 id="check"></h1>
+ 	<form name="f">
+	<table  style="top: 5px" cellpadding="5" cellspacing="5" border="5">
+	<tr>	
+		<td>User Name</td>
+		<td><input type="text" placeholder="Enter a username..." name="txtName"/></td>
+	</tr><br/>
+	<tr>
+		<td>Password</td>
+		<td><input type="text" placeholder="Enter a password..." name="txtPass"/></td>
+	</tr><br/>
+	<tr>	
+		<td>Full Name</td>
+		<td><input type="text" placeholder="Enter your fullname..." name="txtFullName"/></td>
+	</tr><br/>
+	<tr>
+		<td>Gender</td>
+		<td>Male<input type="radio" name="gender" checked />
+		    Female<input type="radio" name="gender"></td> 
+	</tr><br/>
+	<tr><td>Phone number</td>
+		<td><input type="text" placeholder="Enter your phone number" name="txtPhone"/></td>
+	</tr>
+	<tr>
+		<td>DOB</td>
+		<td><input type="date"/></td>	
+	</tr><br/>
+	<tr>
+		<td>City </td>
+		<td><select>
+			<option>---Selected---</option>
+			<option>Ho Chi Minh</option>
+			<option>Binh Đinh</option>
+			<option>Đong Nai</option>
+			<option>Long An</option>
+			<option>Đong Thap</option>
+			</select></td>
+	</tr><br/>
+	<tr>
+		<td>Address</td>
+		<td><textarea placeholder="Enter an address.." name="txtAddress"></textarea></td>
+	</tr><br/>
+	<tr>
+		<td>Email</td>
+		<td><input type="email" placeholder="Enter an Email..." name="txtMail"/></td>
+	</tr><br/>
+		<tr>
+		<td>Avarta</td>
+		<td><input type="file" value="file upload" name="txtPicture"/></td>
+		</tr><br/>
+	<tr>
+	<td><input type="button" value="Create" Onclick="checkValid()"/>
+		<input type="reset" value="Reset"/>	   
+	</td>	
+	</tr>
+			
+</table>
+</form>
+</center>
+</body>
+</html>
+<script>
+function checkValid()
+		{
+			if(f.txtName.value=="")
+				{
+
+							alert('please enter user value');
+							
+				}
+			else if(f.txtName.value=="")
+				{
+					alert('please enter user value');
+					
+				}
+				else if(f.txtPass.value=="")
+				{
+					alert('please enter user Pass');
+					
+				}
+				else if(f.txtFullName.value=="")
+				{
+					alert('please enter user FullName');
+					
+				}
+				else if(f.txtAddress.value=="")
+				{
+					alert('please enter user Address');
+					
+				}
+				else if(f.txtMail.value=="")
+				{
+					alert('please enter Mail ');
+					
+				}
+			{
+				location = "../Signin/Signin.html"
+			}
+		}
+
+</script>
+</body>
+</html>

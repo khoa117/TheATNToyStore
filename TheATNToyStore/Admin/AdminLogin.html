@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phones Shops</title>
+	<link rel="stylesheet" href="../CSS/untitled.css"/>
+	<link rel="stylesheet" href="Admin.html"/>
+<title>Layout</title>
+</head>
+<script>
+		function checkLogin()
+		{
+			if(f1.txtName.value=="Admin")
+				{
+					if(f1.txtPass.value=="admin")
+						{
+							alert('Login success');
+							location = "../Admin/Admin.html"
+						}
+					else
+						{
+							alert('Invalid password');
+							f1.txtPass.focus();
+						}
+				}
+			else
+				{
+					alert('Invalid user name');
+					f1.txtName.focus();
+				}
+		}
+	</script>
+<body>
+	<center>
+		<form name="f1">
+	<fieldset>
+		<table border="1" cellpadding="1" cellspacing="1" align="center">
+		<tr bgcolor="cadetblue">
+		<th colspan="2" style="color: antiquewhite">Login Admin</th>	
+		</tr>
+		<tr>
+			<td><label>Username</label></td>
+			<td><input type="text" name="txtName"/></td>
+		</tr>	
+		<tr>
+			<td><label>Password</label></td>
+			<td><input type="password" name="txtPass"/></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Login" name="btnSummit" onClick="checkLogin()"/></td>
+		</tr>
+		</table>
+		</fieldset>
+	</form>
+		</center>
+
+</body>
+</html>
+

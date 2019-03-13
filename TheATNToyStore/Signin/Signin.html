@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phones Shops</title>
+	<link rel="stylesheet" href="../../Phone Shops 2/CSS/untitled.css"/>
+<title>Layout</title>
+</head>
+<script>
+		function checkLogin()
+		{
+			if(f1.txtName.value=="tranduykhoa")
+				{
+					if(f1.txtPass.value=="1234567")
+						{
+							alert('Login success');
+							location = "../Phone.html"
+						}
+					else
+						{
+							alert('Invalid password');
+							f1.txtPass.focus();
+						}
+				}
+			else
+				{
+					alert('Invalid user name');
+					f1.txtName.focus();
+				}
+		}
+	</script>
+<body>
+	<div id="header-main">
+    <div class="container">
+    <div class="panel-brand">
+    <center><div class="logo"><a href="https://www.theanttoystore.com/en" title="store">
+    <img src="https://f.btwcdn.com/store-41331/store/772e3f0d-edeb-55cf-2e37-5c3a0599f2d2.jpg" width="90" alt="The Ant Toy store" title="The Ant Toy store" class="img-logo"></a>
+    </div>
+		</center>
+    <div class="store-info text-center">
+    <div class="text-center">
+    <center><h1 class="store-name">The Ant Toy Store</h1></center>
+    <a href="https://www.theanttoystore.com/en/login"></a>
+    </div>
+    <p class="text -size13 -gray">The Ant Toy store :144 Pham Phu Thu, P.4, Q.6</p>
+    </div><!-- store-info -->            
+    </div>
+    </div>
+</div>
+	<div>
+	<div id="head"> </div>
+	<div id="menu">
+		<ul>
+		<li><a href="TheATNToyStore.html">HOME</a></li>
+        <li><a href="../PRODUCT.html">PRODUCT</a></li>
+	    <li><a href="../Register/Register.html">REGISTER</a></li>
+	    <li><a href="Signin.html">SIGNIN</a></li>
+		<li><a href="..">CONTACT</a></li>
+		</ul>
+		</div>
+				<td><img src="../../ac76fd61-76e1-b46d-1cb4-5c20b880a937.png" width="100%" height="100%"/></td>
+				
+			</div>
+	<center>
+		<form name="f1">
+	<fieldset>
+		<table border="1" cellpadding="1" cellspacing="1" align="center">
+		<tr bgcolor="cadetblue">
+		<th colspan="2" style="color: antiquewhite">Login Page</th>	
+		</tr>
+		<tr>
+			<td><label>Username</label></td>
+			<td><input type="text" name="txtName"/></td>
+		</tr>	
+		<tr>
+			<td><label>Password</label></td>
+			<td><input type="password" name="txtPass"/></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="Sign in" name="btnSummit" onClick="checkLogin()"/></td>
+			<a href="../../Phone Shops 2/Register/Register.html">Register if you haven't</a>
+		</tr>
+		</table>
+		</fieldset>
+	</form>
+		</center>
+		
+	</div>
+</body>
+</html>
